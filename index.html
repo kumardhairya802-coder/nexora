@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nexora | Digital Presence That Performs</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background: #08090d;
+      color: #ffffff;
+      line-height: 1.6;
+    }
+
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 10;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 8%;
+      background: rgba(8, 9, 13, 0.95);
+      border-bottom: 1px solid #20222b;
+    }
+
+    .logo {
+      font-size: 25px;
+      font-weight: 800;
+      letter-spacing: 1px;
+    }
+
+    nav a {
+      color: #ccc;
+      text-decoration: none;
+      margin-left: 25px;
+    }
+
+    nav a:hover {
+      color: white;
+    }
+
+    .hero {
+      min-height: 90vh;
+      display: flex;
+      align-items: center;
+      padding: 80px 8%;
+      background:
+        radial-gradient(circle at 80% 30%, #283cff44, transparent 35%),
+        radial-gradient(circle at 20% 80%, #7c3cff33, transparent 35%);
+    }
+
+    .hero-content {
+      max-width: 850px;
+    }
+
+    .badge {
+      display: inline-block;
+      padding: 8px 15px;
+      border: 1px solid #343746;
+      border-radius: 30px;
+      color: #aaa;
+      margin-bottom: 25px;
+    }
+
+    h1 {
+      font-size: clamp(45px, 8vw, 85px);
+      line-height: 1;
+      margin-bottom: 25px;
+    }
+
+    .gradient {
+      background: linear-gradient(90deg, #7c8cff, #c77dff);
+      -webkit-background-clip: text;
+      color: transparent;
+    }
+
+    .hero p {
+      color: #aaa;
+      font-size: 19px;
+      max-width: 650px;
+      margin-bottom: 35px;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 15px 25px;
+      border-radius: 10px;
+      background: white;
+      color: black;
+      text-decoration: none;
+      font-weight: bold;
+      margin-right: 10px;
+    }
+
+    .btn.secondary {
+      background: #171921;
+      color: white;
+      border: 1px solid #343746;
+    }
+
+    section {
+      padding: 90px 8%;
+    }
+
+    .section-title {
+      font-size: 42px;
+      margin-bottom: 15px;
+    }
+
+    .section-subtitle {
+      color: #999;
+      margin-bottom: 45px;
+    }
+
+    .services,
+    .portfolio,
+    .pricing {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 22px;
+    }
+
+    .card {
+      padding: 30px;
+      border: 1px solid #242632;
+      border-radius: 18px;
+      background: #101117;
+    }
+
+    .card h3 {
+      margin: 15px 0 10px;
+      font-size: 22px;
+    }
+
+    .card p {
+      color: #999;
+    }
+
+    .icon {
+      font-size: 35px;
+    }
+
+    .portfolio .card {
+      min-height: 230px;
+    }
+
+    .price {
+      font-size: 38px;
+      font-weight: bold;
+      margin: 20px 0;
+    }
+
+    .price span {
+      font-size: 15px;
+      color: #888;
+    }
+
+    .contact {
+      text-align: center;
+      background: #101117;
+    }
+
+    .contact p {
+      color: #aaa;
+      margin: 15px auto 30px;
+      max-width: 600px;
+    }
+
+    footer {
+      padding: 30px 8%;
+      color: #777;
+      text-align: center;
+      border-top: 1px solid #20222b;
+    }
+
+    @media (max-width: 750px) {
+      header {
+        padding: 17px 5%;
+      }
+
+      nav {
+        display: none;
+      }
+
+      section {
+        padding: 70px 6%;
+      }
+
+      .hero {
+        min-height: 80vh;
+        padding: 60px 6%;
+      }
+
+      .services,
+      .portfolio,
+      .pricing {
+        grid-template-columns: 1fr;
+      }
+
+      h1 {
+        font-size: 50px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <div class="logo">NEXORA</div>
+
+    <nav>
+      <a href="#services">Services</a>
+      <a href="#work">Our Work</a>
+      <a href="#pricing">Pricing</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div class="hero-content">
+
+      <div class="badge">⚡ Digital solutions for growing businesses</div>
+
+      <h1>
+        Your business deserves a
+        <span class="gradient">better website.</span>
+      </h1>
+
+      <p>
+        Nexora creates modern, fast and mobile-friendly websites
+        that help local businesses look professional online and
+        turn visitors into customers.
+      </p>
+
+      <a href="#contact" class="btn">Start a Project</a>
+      <a href="#work" class="btn secondary">View Our Work</a>
+
+    </div>
+  </section>
+
+  <section id="services">
+
+    <h2 class="section-title">What we do</h2>
+    <p class="section-subtitle">
+      Simple digital solutions for modern businesses.
+    </p>
+
+    <div class="services">
+
+      <div class="card">
+        <div class="icon">🌐</div>
+        <h3>Business Websites</h3>
+        <p>
+          Professional websites designed to make your business
+          stand out online.
+        </p>
+      </div>
+
+      <div class="card">
+        <div class="icon">📱</div>
+        <h3>Mobile-First Design</h3>
+        <p>
+          Beautiful websites that work smoothly on phones,
+          tablets and computers.
+        </p>
+      </div>
+
+      <div class="card">
+        <div class="icon">🚀</div>
+        <h3>Landing Pages</h3>
+        <p>
+          Focused landing pages designed for promotions,
+          campaigns and new businesses.
+        </p>
+      </div>
+
+    </div>
+  </section>
+
+  <section id="work">
+
+    <h2 class="section-title">Our Work</h2>
+    <p class="section-subtitle">
+      Demo projects created by Nexora.
+    </p>
+
+    <div class="portfolio">
+
+      <div class="card">
+        <div class="icon">☕</div>
+        <h3>Urban Brew Café</h3>
+        <p>
+          A premium café website with menu, contact,
+          location and WhatsApp ordering.
+        </p>
+      </div>
+
+      <div class="card">
+        <div class="icon">💈</div>
+        <h3>Salon Demo</h3>
+        <p>
+          Modern salon website concept with services,
+          gallery and appointment CTA.
+        </p>
+      </div>
+
+      <div class="card">
+        <div class="icon">📚</div>
+        <h3>Coaching Demo</h3>
+        <p>
+          Student-focused coaching website concept
+          with courses and enquiry sections.
+        </p>
+      </div>
+
+    </div>
+  </section>
+
+  <section id="pricing">
+
+    <h2 class="section-title">Simple Pricing</h2>
+    <p class="section-subtitle">
+      Starter packages for small businesses.
+    </p>
+
+    <div class="pricing">
+
+      <div class="card">
+        <h3>Starter</h3>
+        <div class="price">₹999</div>
+        <p>One-page business website.</p>
+      </div>
+
+      <div class="card">
+        <h3>Professional</h3>
+        <div class="price">₹2,499</div>
+        <p>Multi-section business website with contact features.</p>
+      </div>
+
+      <div class="card">
+        <h3>Premium</h3>
+        <div class="price">₹4,999</div>
+        <p>Advanced business website with custom features.</p>
+      </div>
+
+    </div>
+  </section>
+
+  <section id="contact" class="contact">
+
+    <h2 class="section-title">Have a project?</h2>
+
+    <p>
+      Tell us about your business and we'll discuss what kind
+      of website would work best for you.
+    </p>
+
+    <a
+      class="btn"
+      href="https://wa.me/919876543210"
+      target="_blank">
+      💬 Contact Nexora
+    </a>
+
+  </section>
+
+  <footer>
+    © 2026 Nexora — Digital solutions for growing businesses.
+  </footer>
+
+</body>
+</html>
